@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dissatisfied: false
+  preferance: false
+  do_something: false
+  other: MyText
+
+two:
+  dissatisfied: false
+  preferance: false
+  do_something: false
+  other: MyText

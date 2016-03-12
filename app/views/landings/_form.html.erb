@@ -1,0 +1,33 @@
+<%= form_for(@landing) do |f| %>
+  <% if @landing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@landing.errors.count, "error") %> prohibited this landing from being saved:</h2>
+
+      <ul>
+      <% @landing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dissatisfied %><br>
+    <%= f.check_box :dissatisfied %>
+  </div>
+  <div class="field">
+    <%= f.label :preferance %><br>
+    <%= f.check_box :preferance %>
+  </div>
+  <div class="field">
+    <%= f.label :do_something %><br>
+    <%= f.check_box :do_something %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

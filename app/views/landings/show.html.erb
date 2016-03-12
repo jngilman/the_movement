@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dissatisfied:</strong>
+  <%= @landing.dissatisfied %>
+</p>
+
+<p>
+  <strong>Preferance:</strong>
+  <%= @landing.preferance %>
+</p>
+
+<p>
+  <strong>Do something:</strong>
+  <%= @landing.do_something %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @landing.other %>
+</p>
+
+<%= link_to 'Edit', edit_landing_path(@landing) %> |
+<%= link_to 'Back', landings_path %>
