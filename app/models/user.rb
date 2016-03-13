@@ -3,5 +3,4 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   # on installation, added confirmable and lockable per http://www.sitepoint.com/devise-authentication-in-depth/
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
-end
+         :recoverable, :rememberable, :trackable, :validatable,

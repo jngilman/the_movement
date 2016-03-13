@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160313133933) do
+ActiveRecord::Schema.define(version: 20160313153511) do
 
   create_table "landings", force: :cascade do |t|
     t.boolean  "dissatisfied"
@@ -45,7 +45,9 @@ ActiveRecord::Schema.define(version: 20160313133933) do
     t.datetime "updated_at",                          null: false
   end
 
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true
 
 end
