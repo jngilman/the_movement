@@ -1,4 +1,8 @@
 Rails.application.configure do
+  #added the following per http://www.sitepoint.com/devise-authentication-in-depth/
+config.action_mailer.default_url_options = { host: '127.0.0.1', port: 3000 }
+
+  # the following came with the initial build:
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
