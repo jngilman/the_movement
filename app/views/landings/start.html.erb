@@ -3,10 +3,11 @@
 <% content_for :top_content do %>
   <div class="jumbotron">
     <div class="container">
-      <h1>Welcome!</h1>
+      <h2>Are you dissatisfied with the leading Presidential candidates?</h2>
       <p>Register to get started.</p>
       <p>
-        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+        <%= link_to 'Yes', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+        <%= link_to 'No', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
       </p>
     </div>
   </div>

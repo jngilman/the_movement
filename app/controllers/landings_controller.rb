@@ -3,7 +3,7 @@ class LandingsController < ApplicationController
 
   # GET /landings
   # GET /landings.json
-  def index
+  def start
     @landings = Landing.all
   end
 
