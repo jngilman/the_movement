@@ -7,6 +7,9 @@ class LandingsController < ApplicationController
     @landings = Landing.all
   end
 
+  def s_y
+  end
+
   # GET /landings/1
   # GET /landings/1.json
   def show

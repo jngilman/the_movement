@@ -3,17 +3,16 @@
 <% content_for :top_content do %>
   <div class="jumbotron">
     <div class="container">
-      <h2>Are you dissatisfied with the leading Presidential candidates?</h2>
-      <p>Register to get started.</p>
-      <p>
-        <%= link_to 'Yes', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
-        <%= link_to 'No', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+      <h2 center>Are you dissatisfied with the leading Presidential candidates and or do you desire a better candidate?</h2>
+      <p style="text-align:center;">
+        <%= link_to 'Yes', s_y_path, class: 'btn btn-success btn-lg' %>
+        <%= link_to 'No', s_n_path, class: 'btn btn-danger btn-lg' %>
       </p>
     </div>
   </div>
 <% end %>
 
-<h1>Listing Landings</h1>
+<!--<h1>Listing Landings</h1>
 
 <table>
   <thead>
@@ -43,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Landing', new_landing_path %>
+<%= link_to 'New Landing', new_landing_path %>-->

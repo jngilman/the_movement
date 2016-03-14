@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<% content_for :top_content do %>
+  <div class="jumbotron">
+    <div class="container">
+      <h2 center>We think there only two options; regrettably, neither is good.  Which do you prefer?</h2>
+      <p style="text-align:center;">
+        <%= link_to 'Vote for the lesser of two evils or just, do not vote', s_y_dn_path, class: 'btn btn-danger btn-lg' %>
+        <%= link_to 'Write-in the name of a more qualified individual', s_y_wi_path, class: 'btn btn-success btn-lg' %>
+      </p>
+    </div>
+  </div>
+<% end %>

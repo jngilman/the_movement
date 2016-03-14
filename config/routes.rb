@@ -3,6 +3,14 @@ Rails.application.routes.draw do
   devise_for :users
   resources :landings
   root 'landings#start'
+
+  get "/s_y" => "landings#s_y"
+  get "/s_n" => "landings#s_n"
+  get "/s_y_dn" => "landings#s_y_dn"
+  get "/s_y_wi" => "landings#s_y_wi"
+  get "/s_y_wi_mi" => "landings#s_y_wi_mi"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

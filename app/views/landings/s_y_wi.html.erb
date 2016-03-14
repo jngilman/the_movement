@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<% content_for :top_content do %>
+  <div class="jumbotron">
+    <div class="container">
+      <h2 center>Great!  We agree with you.</h2>
+      <p>Let's get started so we all write-in the same name.  This will not be easy, but doable.</p>
+      <p style="text-align:center;">
+        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-success btn-lg' %>
+        <%= link_to 'Hold on now. I seek more information about this movement, first.', s_y_wi_mi_path, class: 'btn btn-info btn-lg' %>
+      </p>
+    </div>
+  </div>
+<% end %>
