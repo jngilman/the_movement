@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160313133933) do
+ActiveRecord::Schema.define(version: 20160316021957) do
 
   create_table "landings", force: :cascade do |t|
     t.boolean  "dissatisfied"
@@ -43,6 +43,9 @@ ActiveRecord::Schema.define(version: 20160313133933) do
     t.string   "name"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "first_name"
+    t.string   "middle_initial"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
